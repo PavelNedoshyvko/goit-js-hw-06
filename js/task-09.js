@@ -13,6 +13,7 @@ changeColorBtn: document.querySelector('.change-color'),
 refs.changeColorBtn.addEventListener('click', onChangeColorBtnClick);
 
 function onChangeColorBtnClick() {
-	refs.body.style.backgroundColor = getRandomHexColor();
-	refs.nameOfColor.textContent = getRandomHexColor();
+	const randomHexColor = getRandomHexColor();
+	refs.body.style.backgroundColor = randomHexColor;
+	refs.nameOfColor.textContent = randomHexColor;
 };
